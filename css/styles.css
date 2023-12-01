@@ -1,0 +1,53 @@
+html,
+body,
+main,
+.crud-container,
+.cards-container,
+#app {
+  height: 100%;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.card {
+  margin: 10px auto;
+  padding: 4px;
+}
+
+.wrapper {
+  height: 100%;
+  max-height: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.spinner-border{
+  display: grid;
+  place-content: center;
+  height: 80px;
+  width:  80px;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form {
+  background-color: aliceblue;
+  margin: 10px auto;
+  width: 400px;
+  padding: 20px;
+}
