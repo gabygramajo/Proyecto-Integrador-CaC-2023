@@ -49,5 +49,18 @@ form {
   background-color: aliceblue;
   margin: 10px auto;
   width: 400px;
-  padding: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+input {
+  background-color: #fcfcfc !important;
+  border-radius: 10px;
+  padding: 4px 0 4px 4px;
+}
+
+.required-field {
+  color: #e10d0d;
+  font-weight: bold;
+  font-size: 20px;
 }

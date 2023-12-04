@@ -25,23 +25,23 @@
 
           <div class="mb-2">
             <label class="d-block" for="id">Id</label>
-            <input class="w-100" type="number" name="id" id="id" disabled v-model="id" />
+            <input class="w-100" type="number" name="id" id="id" disabled v-model="id" required />
           </div>
           <div class="mb-2">
-            <label class="d-block" for="nombre">Nombre</label>
-            <input class="w-100" type="text" name="nombre" id="nombre" v-model="nombre" />
+            <label class="d-block" for="nombre">Nombre <span class="required-field">*</span></label>
+            <input class="w-100" type="text" name="nombre" id="nombre" v-model="nombre" required />
           </div>
           <div class="mb-2">
-            <label class="d-block" for="tipo">Tipo</label>
-            <input class="w-100" type="text" name="tipo" id="tipo" v-model="tipo" />
+            <label class="d-block" for="tipo">Tipo <span class="required-field">*</span></label>
+            <input class="w-100" type="text" name="tipo" id="tipo" v-model="tipo" required />
           </div>
           <div class="mb-2">
-            <label class="d-block" for="descripcion">Descripcion</label>
-            <input class="w-100" type="text" name="descripcion" id="descripcion" v-model="descripcion" />
+            <label class="d-block" for="descripcion">Descripcion <span class="required-field">*</span></label>
+            <input class="w-100" type="text" name="descripcion" id="descripcion" v-model="descripcion" required />
           </div>
           <div class="mb-2">
-            <label class="d-block" for="imagen">Imagen</label>
-            <input class="w-100" class="d-block" type="text" name="imagen" id="imagen" v-model="imagen" />
+            <label class="d-block" for="imagen">Imagen <span class="required-field">*</span></label>
+            <input class="w-100" class="d-block" type="text" name="imagen" id="imagen" v-model="imagen" required />
             <img class="rounded mx-auto d-block mt-1" width="100" :src="imagen" alt="" />
           </div>
           <div class="container text-center">

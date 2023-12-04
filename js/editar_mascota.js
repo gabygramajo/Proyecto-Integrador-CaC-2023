@@ -1,6 +1,6 @@
-console.log(location.search); // lee los argumentos pasados a este formulario
+// console.log(location.search); // lee los argumentos pasados a este formulario
 var id = location.search.slice(4);
-console.log("id: ", id);
+// console.log("id: ", id);
 const { createApp } = Vue;
 
 createApp({
@@ -21,7 +21,7 @@ createApp({
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
-          console.log("data: ",data);
+          // console.log("data: ",data);
           this.id = data.id;
           this.nombre = data.nombre;
           this.imagen = data.imagen;
@@ -47,7 +47,9 @@ createApp({
         headers: { "Content-Type": "application/json" },
         redirect: "follow",
       };
-      fetch(this.url, options)
+      // console.log(mascota.nombre);
+      if (!(Object.values(mascota)).includes("")) {
+        fetch(this.url, options)
         .then(function () {
           alert("Registro modificado");
           window.location.href = "./mascotas.html";
@@ -56,6 +58,9 @@ createApp({
           console.error(err);
           alert("Error al Modificar");
         });
+      } else {
+        alert("Todos los campos deben completarse");
+      }
     },
   },
 

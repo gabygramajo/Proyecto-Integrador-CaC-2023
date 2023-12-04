@@ -60,7 +60,9 @@ createApp({
         headers: { "Content-Type": "application/json" },
         redirect: "follow",
       };
-      fetch(this.url, options)
+
+      if (!(Object.values(mascota)).includes("")) {
+        fetch(this.url, options)
         .then(function (response) {
           alert("Registro grabado");
           window.location.href = "./mascotas.html";
@@ -69,6 +71,9 @@ createApp({
           console.error(err);
           alert("Error al Grabar");
         });
+      } else {
+        alert("Todos los campos deben completarse");
+      }
     },
   },
   created() {
