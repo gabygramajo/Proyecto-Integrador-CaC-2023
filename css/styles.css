@@ -1,6 +1,5 @@
 html,
 body,
-main,
 .crud-container,
 .cards-container,
 #app {
@@ -10,6 +9,12 @@ main,
 body {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+main {
+  height: auto-fit;
+  min-height: 100vh;
+  padding-top: 20px;
 }
 
 .row {
@@ -63,4 +68,9 @@ input {
   color: #e10d0d;
   font-weight: bold;
   font-size: 20px;
+}
+footer {
+  padding: 30px 8px;
+  background-color: rgb(248,249,250);
+  border-top: 1px solid rgba(143, 143, 143, 0.3);
 }
