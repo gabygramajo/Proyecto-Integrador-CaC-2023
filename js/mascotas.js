@@ -22,6 +22,8 @@ createApp({
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
+          console.log("todo salió bien");
+
           this.mascotas = data;
           this.cargando = false;
           if (data.length < 30) {
@@ -31,6 +33,7 @@ createApp({
           }
         })
         .catch((err) => {
+          console.log("algo salió mal");
           console.error(err);
           this.error = true;
         });
@@ -61,7 +64,7 @@ createApp({
         redirect: "follow",
       };
 
-      if (!(Object.values(mascota)).includes("")) {
+      if (!(Object.values(mascota)).includes("")) { //validar que no tenga campos vacíos
         fetch(this.url, options)
         .then(function (response) {
           alert("Registro grabado");

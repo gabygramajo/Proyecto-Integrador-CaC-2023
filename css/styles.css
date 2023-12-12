@@ -12,9 +12,12 @@ body {
 }
 
 main {
-  height: auto-fit;
   min-height: 100vh;
   padding-top: 20px;
+}
+
+ul li {
+  font-weight: bold;
 }
 
 .row {
@@ -73,4 +76,39 @@ footer {
   padding: 30px 8px;
   background-color: rgb(248,249,250);
   border-top: 1px solid rgba(143, 143, 143, 0.3);
+}
+
+/* home */
+
+#main-carousel {
+  min-height: 0;
+  padding-top: 0;
+}
+
+#main-carousel, 
+#carousel-cover,
+.carousel-item {
+  max-height: 90vh;
+}
+
+@media screen and (max-width: 550px) {
+  #main-carousel {
+    padding-top: 10%;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  color: #ffe100;
+  text-shadow: 2px 2px 2px rgb(99 19 149);
+}
+
+.carousel-caption h2 {
+  font-size: 40px;
+}
+
+.carousel-caption p {
+  font-size: 25px;
+  font-weight: normal;
 }
