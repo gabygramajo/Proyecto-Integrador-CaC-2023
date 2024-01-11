@@ -1,5 +1,7 @@
 # Proyecto-Integrador-CaC-2023
-Frontend del CRUD hecho con Python
+Frontend del CRUD hecho con Python ([repo del backend](https://github.com/gabygramajo/backend-proyecto-integrador-CaC-2023))
+
+![portada de yoTeCuido](./yoTecuido.png)  
 
 Proyecto Integrador CaC 2023
 
